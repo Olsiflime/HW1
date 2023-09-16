@@ -1,7 +1,11 @@
-let a = 20;
+let a = 10;
+a = 20;
 alert(a);
+
 let b = 2007;
 alert(b);
+let js = "Брендан Эйх";
+alert(js);
 let c = 10;
 let d = 2;
 let summ = c + d;
@@ -20,12 +24,12 @@ let g = 2;
 alert(f % g);
 
 let num = 1;
-num = num + 5;
-num = num - 3;
-num = num * 7;
-num = num / 3;
-num = num + 1;
-num = num - 1;
+num +=5;
+num -=3;
+num *=7;
+num /=3;
+num +=1;
+num -=1;
 alert(num);
 
 let age = Number(prompt('Сколько вам лет?'));
