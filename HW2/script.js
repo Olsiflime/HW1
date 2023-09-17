@@ -55,4 +55,3 @@ let nam = String(prompt('Твое имя?'));
 alert (`Привет, ${nam}!`);
 
 
-
