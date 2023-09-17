@@ -168,6 +168,15 @@ a {
   .game_product {
     width: 343px;
   }
+  .game_product_A {
+    background-image: url(img/AM.jpg);
+  }
+  .game_product_B {
+    background-image: url(img/BM.jpg);
+  }
+  .game_product_C {
+    background-image: url(img/CM.jpg);
+  }
   .game_seles {
     display: flex;
     gap: 16px;

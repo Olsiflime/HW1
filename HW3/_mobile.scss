@@ -39,7 +39,18 @@
         }
         &_product{
             width: 343px;
-            
+            &_A{
+
+                background-image: url(img/AM.jpg);
+             }
+             &_B{
+
+                background-image: url(img/BM.jpg);
+             }
+             &_C{
+
+                background-image: url(img/CM.jpg);
+             }
         }
         &_seles{
             display: flex;
