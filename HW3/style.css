@@ -22,7 +22,6 @@ a {
 }
 
 .header {
-  width: 1440px;
   height: 1024px;
   flex-shrink: 0;
   background: #000915;
@@ -76,7 +75,6 @@ a {
 }
 
 .game {
-  width: 1440px;
   height: 556px;
   flex-shrink: 0;
   background: #000915;
@@ -97,13 +95,17 @@ a {
   font-weight: 600;
   line-height: 32px;
   display: flex;
+  position: relative;
   flex-direction: column-reverse;
-  padding-left: 32px;
-  padding-bottom: 32px;
 }
 .game_product:hover {
   border-radius: 16px;
   border: 3px solid #44D2FF;
+}
+.game_product_text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
 }
 .game_product-A {
   background-image: url(img/A.jpg);
@@ -159,13 +161,15 @@ a {
     padding-top: 238px;
   }
   .game {
-    width: 375px;
+    width: 100%;
     height: 1221px;
   }
   .game_box {
     flex-direction: column;
   }
   .game_product {
+    display: flex;
+    gap: 16px;
     width: 343px;
   }
   .game_product_A {
@@ -176,9 +180,5 @@ a {
   }
   .game_product_C {
     background-image: url(img/CM.jpg);
-  }
-  .game_seles {
-    display: flex;
-    gap: 16px;
   }
 }/*# sourceMappingURL=style.css.map */

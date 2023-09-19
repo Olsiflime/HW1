@@ -17,7 +17,6 @@ a {
     padding-top: 217px;
 }
 .header{
-  width: 1440px;
    height: 1024px;
    flex-shrink: 0;
    background: #000915;
@@ -72,7 +71,6 @@ a {
 }
 }
 .game{
-    width: 1440px;
     height: 556px;
     flex-shrink: 0;
     background: #000915;
@@ -93,15 +91,19 @@ a {
       font-weight: 600;
      line-height: 32px; 
      display: flex;
+     position: relative;
      flex-direction: column-reverse;
-     padding-left: 32px;
-     padding-bottom: 32px;
      &:hover{
        border-radius: 16px;
        border: 3px solid #44D2FF;
        
      }
-     
+     &_text{
+      position: absolute;
+      bottom: 32px;
+      left: 32px;
+      
+     }
     &-A{
      background-image: url(img/A.jpg);
      background-repeat: no-repeat;
