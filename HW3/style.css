@@ -102,11 +102,6 @@ a {
   border-radius: 16px;
   border: 3px solid #44D2FF;
 }
-.game_product_text {
-  position: absolute;
-  bottom: 32px;
-  left: 32px;
-}
 .game_product-A {
   background-image: url(img/A.jpg);
   background-repeat: no-repeat;
@@ -126,6 +121,11 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 16px;
+}
+.game_text {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
 }
 
 @media (max-width: 767px) {

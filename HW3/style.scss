@@ -77,11 +77,10 @@ a {
     display: flex;
     justify-content: center;
     &_box{
-        display: flex;
-        gap: 32px;
-      
+      display: flex;
+      gap: 32px;
     }
-    &_product{
+  &_product{
       width: 379px;
      height: 300px;
      color: #FFF;
@@ -96,15 +95,8 @@ a {
      &:hover{
        border-radius: 16px;
        border: 3px solid #44D2FF;
-       
      }
-     &_text{
-      position: absolute;
-      bottom: 32px;
-      left: 32px;
-      
-     }
-    &-A{
+     &-A{
      background-image: url(img/A.jpg);
      background-repeat: no-repeat;
      background-size: cover;
@@ -126,5 +118,11 @@ a {
      border-radius: 16px;
     }
     }
+   &_text{
+    position: absolute;
+    bottom: 32px;
+    left: 32px;  
+    }
+    
 }
 @import 'mobile';
