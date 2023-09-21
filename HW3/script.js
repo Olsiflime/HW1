@@ -2,7 +2,7 @@ let pw = 'пароль';
 alert(pw)
 let password = prompt('Введите пароль');
 alert(password);
-if (password==33) {
+if (password==pw) {
     alert ('Пароль введен верно');
 } else  {
     alert('Пароль введен неправильно');
