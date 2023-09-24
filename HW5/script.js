@@ -10,7 +10,7 @@ min (8 , 3);
 min (6 , 6);
 min (33 , 21);
 
-function EvenOdd (){
+function evenOdd (){
   let num = prompt('Напиши число');
 
   if (num % 2 == 0) {
@@ -19,7 +19,7 @@ function EvenOdd (){
     console.log('Нечетное')
   }
 }
-EvenOdd()
+evenOdd()
 
 function calc (sq){
   let square = sq ** 2;
@@ -66,23 +66,23 @@ function numberUser() {
  } 
  console.log (numberUser("n"));
 
- function Area() {
+ function area() {
   return this.radius ** 2 * 3.14;
 }
-function Perimiter() {
+function perimiter() {
  return this.radius * 2 * 3.14; 
 }
 const circle1={
   radius:5,
 
-  getArea: Area,
-  getPerimiter: Perimiter,
+  getArea: area,
+  getPerimiter: perimiter,
 }
 const circle2={ 
   radius:7,
 
-  getArea: Area,
-  getPerimiter: Perimiter,
+  getArea: area,
+  getPerimiter: perimiter,
 }
   console.log(circle1.getArea());
   console.log(circle1.getPerimiter());
@@ -91,7 +91,7 @@ const circle2={
 
 
 //Игра
-function Seasons (){
+function seasons (){
   let monthNumber = Number(prompt('Введите число месяца'));
 
 if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {

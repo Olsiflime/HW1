@@ -57,7 +57,7 @@
             
         }
     }
-    .Seasons{
+    .top{
          &_greeting{
             display: flex;
             width: 100%;
@@ -68,4 +68,9 @@
             font-size: 32px;
         }
 }
+.GamepadPeople{
+    width: 344px;
+    height: 236px;
+    padding-left: 16px;
+  }
 }
