@@ -1,3 +1,4 @@
+// Домашка 5
 function min (a, b){
     if (a >= b) {
       console.log (`Минимальное число ${b}`);
@@ -112,3 +113,86 @@ if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
   }
  }
 }
+
+//Домашка 6
+//Задание 1
+const klik = [1, 5, 4, 10, 0, 3];
+
+for (let mix = 0 ; mix < klik.length;
+      mix++){
+        if (klik[mix] == 10) break;
+        console.log (klik[mix])
+      }
+//Задание 2
+let index = klik.indexOf(4);
+console.log(index)
+//Задание 3
+const shift = [1, 3, 5, 10, 20];
+shiftleng = shift.join(' ');
+console.log(shiftleng);
+//Задание 4
+let mono = [
+  [1, 1, 1],
+  [1, 1, 1],
+  [1, 1, 1],
+];
+console.log(mono[1][2])
+//Задание 5
+const one = [1, 1, 1];
+one.push(2, 2, 2)
+console.log(one)
+//Задание 6
+let garbage = [9, 8, 7, 'a', 6, 5];
+garbage = garbage.sort();
+console.log(garbage.pop());
+console.log(garbage)
+//Задание 7
+let m = Number(prompt('Угадай число'));
+let search = garbage.includes(m);
+if (search == true) {
+  alert('Угадал')
+} else {
+  alert('Не угадал')
+}
+//Задание 8
+let letters = 'abcdef';
+letters = letters.split('').reverse().join('');
+console.log(letters);
+
+//Задание 9
+const str = [
+  [1, 2, 3,],
+  [4, 5, 6]
+];
+const result = [].concat(...str);
+console.log(result);
+
+//Задание 10
+const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (let i = 0; i < array.length - 1; i++) {
+    const sum = array[i] + array[i + 1];
+    console.log("Сумма", array[i], "и", array[i + 1], "равна", sum);
+}
+//Задание 11
+const massive = [4, 5, 6, 7];
+const number = (massive) => {
+    return massive.map(a => a ** 2)
+}
+console.log(number(massive))
+
+// Задание 12
+const string = ['я', 'устала', 'очень сложно', 'хватит'];
+function getWordLengths(string) {
+    return string.map(p => p.length);
+}
+const lengths = getWordLengths(string);
+console.log(lengths);
+
+//Задание 13
+
+function filterPositive(array) {
+  return array.filter(number => number < 0)
+
+}
+filterPositive([-1, 0, 5, -10, 56]);
+filterPositive([-25, 25, 0, -1000, -2]);
