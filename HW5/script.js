@@ -120,8 +120,8 @@ const klik = [1, 5, 4, 10, 0, 3];
 
 for (let mix = 0 ; mix < klik.length;
       mix++){
-        if (klik[mix] == 10) break;
         console.log (klik[mix])
+        if (klik[mix] == 10) break;
       }
 //Задание 2
 let index = klik.indexOf(4);
@@ -131,11 +131,12 @@ const shift = [1, 3, 5, 10, 20];
 shiftleng = shift.join(' ');
 console.log(shiftleng);
 //Задание 4
-let mono = [
-  [1, 1, 1],
-  [1, 1, 1],
-  [1, 1, 1],
-];
+let mono = [];
+let arr = [1, 1, 1,];
+mono [0] = arr;
+mono [1] = arr;
+mono [2] = arr;
+console.log(mono)
 console.log(mono[1][2])
 //Задание 5
 const one = [1, 1, 1];
