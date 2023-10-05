@@ -130,14 +130,18 @@ console.log(index)
 const shift = [1, 3, 5, 10, 20];
 shiftleng = shift.join(' ');
 console.log(shiftleng);
+
 //Задание 4
 let mono = [];
-let arr = [1, 1, 1,];
-mono [0] = arr;
-mono [1] = arr;
-mono [2] = arr;
+for (let i = 0; i < 3; i++){
+  mono [i] = [];
+  for (let j = 0; j < 3; j++){
+    mono[i].push(1);
+  }
+}
 console.log(mono)
-console.log(mono[1][2])
+
+
 //Задание 5
 const one = [1, 1, 1];
 one.push(2, 2, 2)
