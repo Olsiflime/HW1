@@ -22,17 +22,19 @@ if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
  }
 }
 //Игра 2
-
+//funton words
 let opcion = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 opcion = opcion.sort(() => Math.random() - 0.5)
-alert (`${opcion}`)
+alert (opcion)
+
 let first = prompt ('Какая вкусняшка была первой?');
 let last = prompt ('Какая вкусняшка была последней?');
 
 let masFirst = (opcion[0].toLowerCase());
+let ferstLoc =  first.toLowerCase
 
 console.log(masFirst)
-if (masFirst == first.toLowerCase) {
+if (masFirst == ferstLoc) {
   alert('yes')
 } else {
   alert('no')
@@ -81,17 +83,19 @@ function ranOm (nRan, xRan){
 console.log(Math.round(ranOm()));
 
 //Задание 6
-// Не идет что-то
-const numRan = 5;
+let sixNum = prompt ('Напиши число');
 function bred (p){
-  let six = [];
-  for (let i = 0; i< (six.lenght / 2); i++){
-    six[i] = i == numRan
-  return Math.floor(Math.random() * (p));
+  const six = [];
+  
+
+  for (let i = 0; i < p / 2; i++){
+    let pol = Math.round(Math.random() * p);
+    six.push(pol);
 }
+return six;
 }
-let pol = bred (numRan);
-console.log(pol);
+
+console.log (bred(sixNum));
 
 //Задание 7
 function seven (r, t){
