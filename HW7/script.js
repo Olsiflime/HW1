@@ -22,7 +22,8 @@ if (monthNumber === 1 || monthNumber === 2 || monthNumber === 12) {
  }
 }
 //Игра 2
-//funton words
+
+function words (a, b){
 let opcion = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 opcion = opcion.sort(() => Math.random() - 0.5)
 alert (opcion)
@@ -31,17 +32,20 @@ let first = prompt ('Какая вкусняшка была первой?');
 let last = prompt ('Какая вкусняшка была последней?');
 
 let masFirst = (opcion[0].toLowerCase());
-let ferstLoc =  first.toLowerCase
+let masLast = (opcion[6].toLowerCase())
 
-console.log(masFirst)
-if (masFirst == ferstLoc) {
-  alert('yes')
+if (masFirst === first.toLowerCase() && masLast === last.toLowerCase()) {
+  alert('Отлично')
 } else {
-  alert('no')
-  
+    if (masFirst === first.toLowerCase() || masLast === last.toLowerCase()) {
+      alert('Почти')
+    } else {
+      alert('Попробуй еще раз')
+      
+    }
+  }
 }
-// 
-
+words(first, last)
 
 //Домашка 7
 
